@@ -6,12 +6,14 @@
 body {
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 #header-wrapper , #footer-wrapper {
     margin: 0;
     width: 100%;
-    height: 12%;
+    height: 13%;
+    display: table;
     background-color: #323030;
 }
 
@@ -21,7 +23,7 @@ body {
     background-image: url("./bg/bg-ground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5%;
+    padding: 2%;
 }
 
 .test-button {
@@ -32,4 +34,24 @@ body {
 
 .icon {
     height: 35%;
+}
+
+#header-wrapper h1 {
+    margin: 0;
+    text-align: center;
+    line-height: inherit;
+    vertical-align: middle;
+    font-family: 'Alfa Slab One';
+    display: table-cell;
+    color: ivory;
+    letter-spacing: 0.1em;
+}
+
+#footer-wrapper h3 {
+    margin: 0;
+    line-height: inherit;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    color:#7b7a7a;
 }
