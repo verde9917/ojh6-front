@@ -8,14 +8,14 @@ body {
     height: 100%;
 }
 
-.header-wrapper , .footer-wrapper {
+#header-wrapper , #footer-wrapper {
     margin: 0;
     width: 100%;
     height: 12%;
     background-color: #323030;
 }
 
-.main-wrapper {
+#main-wrapper {
     height: 76%;
     width: 100%;
     background-image: url("./bg/bg-ground.jpg");
