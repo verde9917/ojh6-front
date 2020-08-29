@@ -7,7 +7,11 @@ const setLeftPosition = (iconWidth) => {
 const setTopPosition = (iconHeight) => {
     const browserHeight = document.getElementById("main-wrapper").clientHeight
     const headerHeight = document.getElementById("header-wrapper").clientHeight
+    const footerPosition = document.getElementById("footer-wrapper").getBoundingClientRect().top
     let position = headerHeight + Math.random() * (browserHeight - iconHeight - headerHeight)
+    if(position > footerPosition){
+        // こえてる、一応バグ
+    }
     return (position + "px")
 }
 
