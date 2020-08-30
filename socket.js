@@ -17,7 +17,6 @@ window.onload = () => {
         // const msgbody = message_data['message'];
 
         appear()
-        console.log(message)
 
         const sub_rand = Math.floor(Math.random() * max_sub) + 1 //乱数を発生
         const sub_mp3path = "./sound/call-sub-" + sub_rand + ".mp3"
