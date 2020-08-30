@@ -9,13 +9,10 @@ const setTopPosition = (iconHeight) => {
     const headerHeight = document.getElementById("header-wrapper").clientHeight
     const footerPosition = document.getElementById("footer-wrapper").getBoundingClientRect().top
     let position = headerHeight + Math.random() * (browserHeight - iconHeight - headerHeight)
-    if(position > footerPosition){
-        // こえてる、一応バグ
-    }
     return (position + "px")
 }
 
-const appier = () => {
+const appear = () => {
     let img = document.createElement("img")
     let rand = Math.floor(Math.random() * 20) + 1; //乱数を発生;
     img.src = "./icon/ouen-" + rand + ".png"
