@@ -29,6 +29,11 @@ window.onload = () => {
         maincall.currentTime = 0
     }
 
-    document.getElementById("btn").addEventListener("click", forDebug)
+    const start_button = () => {
+        // document.getElementById("start-button")
+        todokeyell()
+    }
+    // document.getElementById("btn").addEventListener("click", forDebug)
+    document.getElementById("start-button").addEventListener("click", forDebug)
     ws.addEventListener("message", todokeyell)
 }
