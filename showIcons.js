@@ -3,14 +3,14 @@ const max_icon = 20
 const setLeftPosition = (iconWidth) => {
     const browserWidth = document.getElementById("main-wrapper").clientWidth
     const position = Math.random() * (browserWidth - iconWidth)
-    return (position + "px")
+    return position + "px"
 }
 
 const setTopPosition = (iconHeight) => {
     const browserHeight = document.getElementById("main-wrapper").clientHeight
     const headerHeight = document.getElementById("header-wrapper").clientHeight
-    let position = headerHeight + Math.random() * (browserHeight - iconHeight - headerHeight)
-    return (position + "px")
+    const position = headerHeight + Math.random() * (browserHeight - iconHeight - headerHeight)
+    return position + "px"
 }
 
 const appear = () => {
