@@ -12,9 +12,6 @@ window.onload = () => {
     })
 
     ws.onmessage = (message) => {
-        // const message_data = JSON.parse(message.data);
-        // const time = message_data['time'];
-        // const msgbody = message_data['message'];
 
         appear()
 
